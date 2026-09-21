@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join · Karibu Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">Karibu<span>Connect</span></a>
+    <a class="btn ghost" href="login.html">Log in</a>
+  </header>
+  <section class="auth form-card">
+    <h2>Create your profile</h2>
+    <form id="registerForm">
+      <label>Name</label>
+      <input name="name" required />
+      <label>Email</label>
+      <input name="email" type="email" required />
+      <label>Password</label>
+      <input name="password" type="password" required minlength="6" />
+      <label>Age</label>
+      <input name="age" type="number" min="18" required />
+      <label>County</label>
+      <select name="county" id="regCounty"></select>
+      <label>Mode</label>
+      <select name="mode">
+        <option>Student</option>
+        <option selected>Professional</option>
+        <option>Church</option>
+      </select>
+      <label>Bio</label>
+      <textarea name="bio" rows="3" placeholder="What should someone know?"></textarea>
+      <br/><br/>
+      <button class="btn primary" type="submit">Save & continue</button>
+    </form>
+  </section>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

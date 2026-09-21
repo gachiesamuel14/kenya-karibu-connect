@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover · Karibu Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">Karibu<span>Connect</span></a>
+    <nav>
+      <a href="discover.html">Discover</a>
+      <a href="matches.html">Matches</a>
+      <a href="chat.html">Chat</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <a class="btn ghost" href="login.html">Account</a>
+  </header>
+  <div class="app-layout">
+    <aside class="filters card">
+      <h3>Nearby filters</h3>
+      <p id="gpsStatus" class="notice">GPS optional — county works too.</p>
+      <label>County</label>
+      <select id="filterCounty"></select>
+      <label>Mode</label>
+      <select id="filterMode"></select>
+      <label>Max distance (km)</label>
+      <input id="filterKm" type="number" value="25" min="1" max="200" />
+      <label>Age min</label>
+      <input id="filterMinAge" type="number" value="21" />
+      <label>Age max</label>
+      <input id="filterMaxAge" type="number" value="35" />
+    </aside>
+    <section>
+      <div class="swipe-stage" id="swipeCard"></div>
+      <div class="actions">
+        <button class="circle" id="btnPass" title="Pass">✕</button>
+        <button class="circle" id="btnReport" title="Report">⚑</button>
+        <button class="circle" id="btnLike" title="Like">♥</button>
+      </div>
+    </section>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
